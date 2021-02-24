@@ -98,3 +98,21 @@ input{
     height: 50vh;
     margin-top: 5rem;
 }
+.btns{
+    text-align: end;
+}
+.btn{
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.btn-color{
+    background-color: #000;
+}
+
+.btn-color:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #FE5F1E;
+    transition: all .3s;
+}
