@@ -13,11 +13,14 @@ html{
     align-items: center;
     
 }
-.colornav{
+.colornav {
     background-color: rgba(0, 0, 0, 0);
 }
 .colornavC{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.colornavC .contenedor .barra nav a{
+    
 }
 nav a{
     font-size: 1.5rem;
