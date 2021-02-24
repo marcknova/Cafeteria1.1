@@ -1,6 +1,6 @@
 html{
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .contenedor{
     max-width: 120rem;
@@ -14,13 +14,20 @@ html{
     
 }
 .colornav{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
+}
+.colornavC{
+    background-color: rgba(0, 0, 0, 0.6);
 }
 nav a{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 1rem;
     text-decoration: none;
     color: #fff;
+}
+nav a:hover{
+color: #FE5F1E ;
+transition: all 0.5s;
 }
 .imagen{
     background-image: url('../img/pexels-oriana-ortiz-818789.jpg');
@@ -29,6 +36,8 @@ nav a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: soft-light;
 }
 .productos{
     display: flex;
@@ -45,6 +54,12 @@ nav a{
     width: 20rem;
     height: 15rem;
     
+}
+h1{
+    text-align: center;
+    font-size: 8rem;
+    color: #fff;
+    margin-top: 30vh;
 }
 h2{
     text-align: center;
