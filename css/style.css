@@ -29,6 +29,7 @@ nav a{
 h2{
     font-size: 20px;
 }
+
 .img {
     display: flex;
     width: 346px;
@@ -42,6 +43,45 @@ p {
     width: 346px
 }
 
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #CFB191;
+}
+/**/
+
+.news-link-button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    padding-right: 2.2em;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.news-link-button:before {
+    content: "\f138";
+    position: absolute;
+    right: 0.8em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.news-link-button:hover:before, .hover-icon-forward:focus:before, .hover-icon-forward:active:before {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+/**/
 .card {
     height: 50rem;
     margin: 2rem;
