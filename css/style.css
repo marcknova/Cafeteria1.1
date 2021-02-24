@@ -1,15 +1,26 @@
 html{
-    font-size: 65.2%;
+    font-size: 62.5%;
 }
 .contenedor{
     max-width: 120rem;
+    margin: 0 auto 0 auto;
 }
 .barra{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 nav a{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
     text-decoration: none;
+    color: #fff;
+}
+.imagen{
+    background-image: url('../img/pexels-oriana-ortiz-818789.jpg');
+    width: auto;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
