@@ -46,15 +46,16 @@ transition: all 0.5s;
 /*SLIDER*/
 
 img {
-    width: 346px;
-    height: 277px;
+    width: 35rem;
+    height: 28rem;
+    margin-bottom: 1.5rem;
 }
 
 p {
     font-family: sans-serif;
-    font-size: 12px;
-    line-height: 25px;
-    width: 346px
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    width: 35rem;
 }
 
 a {
@@ -81,7 +82,7 @@ a {
     justify-content: center;
     background: #EAE7DE;
     color: #30271C;
-    height: 50rem;
+    height: 55rem;
 }
 
 .cards {
@@ -91,6 +92,22 @@ a {
     padding: 0 3rem 0 0;
 }
 
+.SeparadorIV{
+    height: 0.2rem;
+    width: 10%;
+    background-color: #C7A17A;
+    border-radius: 0.5rem;
+    margin: 2rem auto 1rem auto;  
+}
+
+.SeparadorV {
+    height: 0.3rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/*Efecto  icon*/
 .news-link-button {
     display: inline-block;
     vertical-align: middle;
@@ -123,21 +140,6 @@ a {
     transform: translateX(4px);
 }
 
-.SeparadorIV{
-    height: 0.2rem;
-    width: 10%;
-    background-color: #C7A17A;
-    border-radius: 0.5rem;
-    margin: 2rem auto 1rem auto;  
-}
-
-.SeparadorV {
-    height: 0.5rem;
-    width: 100%;
-    border-radius: 1rem;
-    text-align: center;
-    margin: 1rem 0 1rem 0;
-}
 
 /* PRODUCTOS */
 .productos{
