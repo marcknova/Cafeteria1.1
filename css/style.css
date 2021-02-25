@@ -45,10 +45,6 @@ transition: all 0.5s;
 
 /*SLIDER*/
 
-{
-
-}
-
 img {
     display: flex;
     width: 346px;
@@ -225,4 +221,32 @@ input{
     background-color: rgba(0, 0, 0, 0.1);
     color: #FE5F1E;
     transition: all .3s;
+}
+
+footer {
+    padding: 30px;
+    background-color: #000;
+}
+
+.div-seccion-media {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.div-seccion-media a {
+    margin: 20px;
+    text-decoration: none;
+}
+
+.fa-facebook-square {
+    
+}
+
+.div-copy {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: flex-end;
+    color: #fff;
+    
 }
