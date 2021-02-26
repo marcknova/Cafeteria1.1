@@ -108,17 +108,19 @@
                     <img src="img/cards/pexels-dima-valkov-3740197.jpg" alt="">
                 </div>
                 <div class="footer-card">
-                    <h2>Nombre</h2>
+                   
                     <h3>Precio</h3>
                     <form action="php/procesos/ControlCarrito.php" method="POST">
                         <div class="compra">
+                           
                             <div>
                                 <h3>Cantidad</h3>
                                 <input type="text" name="cantidad">
+                                
                             </div>
                             <div class="agregar">
                                 <h3>agregar</h3>
-                                <button type="submit" name="">
+                                <button type="submit" name="tipo1">
                                     <img src="img/icon/1485969929-12-plus_78898.svg" alt="">
                                 </button>
                             </div>
@@ -199,6 +201,20 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div>
+            <form action="php/procesos/ControlCarrito.php" method="POST">
+                <input type="text" name="cantidad">
+                <select name="Opcion" id="">
+                    <option value="1">Cafe</option>
+                    <option value="2">otra cosa</option>
+                    <option value="3">camida</option>
+                    <option value="4">pantufla</option>
+                </select>
+                <button type="submit" name="submit">
+                    <img src="img/icon/1485969929-12-plus_78898.svg" alt="">
+                </button>
+            </form>
         </div>
         <div class="btns">
             <a href="" class="btn btn-color">Ver mas</a>
