@@ -1,5 +1,5 @@
 <?php
-class Operacion{
+class bean{
 
 	private $sCantidad="";
 	
