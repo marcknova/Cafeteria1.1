@@ -177,16 +177,7 @@ h3{
     justify-content: space-between;
     padding: 2rem;
 }
-input{
-    border: none;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 5rem;
-    height: 2rem;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0.5rem;
-    
-}
+
 .agregar{
     margin: 0;
 }
@@ -218,7 +209,27 @@ input{
     color: #FE5F1E;
     transition: all .3s;
 }
+/*Seleccion*/
+.seleccion{
+    display: flex;
+    justify-content: center;
+}
 
+.seleccion input{
+
+    border: none;
+    background-color: #c7c7c7;
+    width: 5rem;
+    height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.gridform{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
 /*  FOOTER  */
 
 footer {

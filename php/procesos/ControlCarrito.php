@@ -8,6 +8,6 @@ $objOperacion = new bean();
 $objOperacion->setCantidad($cantidad);
 $objOperacion->setOperador($opcion);
 //$objOperacion->Operaciones();
-var_dump($objOperacion->Operaciones()) ;
+echo ($objOperacion->Operaciones()) ;
 
 ?>

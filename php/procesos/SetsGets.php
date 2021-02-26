@@ -28,19 +28,19 @@ class bean
     {
         switch ($this->opcion) {
             case '1':
-                $result = $this->sCantidad * 20;
+                $result = getCantidad() * 20;
                 return  $result;
                 break;
             case '2':
-                 $result = $this->sCantidad * 10;
+                 $result = getCantidad()* 10;
                 return  $result;
                 break;
             case '3':
-                 $result = $this->sCantidad * 80;
+                 $result = getCantidad() * 80;
                 return  $result;
                 break;
             case '4':
-                 $result = $this->sCantidad * 60;
+                 $result =getCantidad()* 60;
                 return  $result;
                 break;
             default:
