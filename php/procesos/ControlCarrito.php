@@ -83,7 +83,11 @@ echo ($objOperacion->Operaciones());
 
                 </div>
 
-
+<div class="btns">
+   
+        <a href="../../index.html" class="btn-color btn">Regresar</a>
+    
+</div>
             </div>
         </div>
     </section>
