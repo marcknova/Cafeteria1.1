@@ -181,9 +181,14 @@ h3{
 .agregar{
     margin: 0;
 }
-.agregar img{
+.agregar button{
     width: 5rem;
-    height: 3.5rem;
+    border: none;
+    align-items: center;
+}
+.agregar img{
+    width: 2rem;
+    height: 2rem;
     margin: 0;
 }
 .factura{
@@ -220,7 +225,7 @@ h3{
 
     border: none;
     background-color: #c7c7c7;
-    width: 5rem;
+    width: 8rem;
     height: 2rem;
     font-size: 2rem;
     text-align: center;
@@ -229,14 +234,19 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: center;
+   justify-items: center;
 }
 .gridFactura{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     grid-template-rows: repeat(3, 1fr);
+    font-size: 2rem;
     justify-items: center;
+}
+select{
+    width: 12rem;
+    height: 2.5rem;
     font-size: 2rem;
 }
 .total{
