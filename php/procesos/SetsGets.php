@@ -4,8 +4,6 @@ class bean
 
     public $sCantidad;
     public $opcion;
-    
-	
 
     public function setCantidad($valor)
     {
@@ -15,15 +13,14 @@ class bean
     {
         return $this->sCantidad;
     }
-	public function setOperador($valor)
+    public function setOperador($valor)
     {
         $this->opcion = $valor;
     }
-	public function getOperador()
+    public function getOperador()
     {
         return $this->opcion;
     }
-
 
     // public function setCantidad2($valor)
     // {
@@ -33,39 +30,90 @@ class bean
     // {
     //     return $this->sCantidad2;
     // }
-	// public function setOperador2($valor)
+    // public function setOperador2($valor)
     // {
     //     $this->opcion2 = $valor;
     // }
-	// public function getOperador2()
+    // public function getOperador2()
     // {
     //     return $this->opcion2;
     // }
 
-	public function Operaciones()
+    public function Operaciones()
     {
         switch ($this->opcion) {
             case '1':
                 $result = $this->sCantidad * 20;
-                return  $result;
+                return $result;
                 break;
             case '2':
-                 $result = $this->sCantidad * 10;
-                return  $result;
+                $result = $this->sCantidad * 10;
+                return $result;
                 break;
             case '3':
-                 $result = $this->sCantidad * 80;
-                return  $result;
+                $result = $this->sCantidad * 80;
+                return $result;
                 break;
             case '4':
-                 $result = $this->sCantidad * 60;
-                return  $result;
+                $result = $this->sCantidad * 60;
+                return $result;
                 break;
             default:
                 break;
         }
     }
-	
+
+    public function Nombre()
+    {
+        switch ($this->opcion) {
+            case '1':
+                $N = "Café Latte";
+                $result = $N;
+                return $result;
+                break;
+            case '2':
+                $N = "Chocolate Caliente";
+                $result = $N;
+                return $result;
+                break;
+            case '3':
+                $N = "Vanilla Latte";
+                $result = $N;
+                return $result;
+                break;
+            case '4':
+                $N = "Helado Café Mocha";
+                $result = $N;
+                return $result;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public function Cantidad()
+    {
+        switch ($this->opcion) {
+            case '1':
+                $result = $this->sCantidad;
+                return $result;
+                break;
+            case '2':
+                $result = $this->sCantidad;
+                return $result;
+                break;
+            case '3':
+                $result = $this->sCantidad;
+                return $result;
+                break;
+            case '4':
+                $result = $this->sCantidad;
+                return $result;
+                break;
+            default:
+                break;
+        }
+    }
     // public function Operaciones2 () {
     //     switch ($this->opcion22) {
     //         case '1':
@@ -87,14 +135,14 @@ class bean
     //         default:
     //             break;
     //     }
-    // } 
+    // }
 
     // public function suma ($a , $b) {
 
     //     return $suma = $a + $b;
     // }
-	/*
-	public function impresion(){
-		return $this->$result;
-	}*/
+    /*
+public function impresion(){
+return $this->$result;
+}*/
 }

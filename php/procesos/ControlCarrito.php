@@ -1,6 +1,6 @@
 <?php
 
-include_once("SetsGets.php");
+include_once "SetsGets.php";
 $opcion = $_POST['Opcion'];
 $cantidad = $_POST['cantidad'];
 // $opcion2 = $_POST['Opcion2'];
@@ -23,8 +23,8 @@ $objOperacion->setOperador($opcion);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba47731c0d.js" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@ $objOperacion->setOperador($opcion);
                     <p>LOGO</p>
                     <nav>
                         <a href="../index.html">Inicio</a>
-                        
+
                         <a href="../productos.html">Productos</a>
                         <a href=""><i class="fas fa-cart-arrow-down"></i></a>
                     </nav>
@@ -51,9 +51,39 @@ $objOperacion->setOperador($opcion);
         <div class="contenedor">
             <div class="factura">
                 <h2>Factura</h2>
-                <?php
-                echo ($objOperacion->Operaciones()) ;
-                ?>
+                <div class="gridFactura">
+                    <div>
+                        <span>Nombre del producto</span>
+                    </div>
+                    <div>
+                        <span>  <?php
+echo ($objOperacion->Nombre());
+?>
+</span>
+                    </div>
+                    <div>
+                        <span>Cantidad</span>
+                    </div>
+                    <div>
+<span>
+<?php
+echo ($objOperacion->Cantidad());
+?>
+</span>
+                    </div>
+                    <div>
+                        <span>Total : </span>
+                    </div>
+                    <div><span class="total">
+                            <?php
+echo ($objOperacion->Operaciones());
+?>
+                        </span>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </section>

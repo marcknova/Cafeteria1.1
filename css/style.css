@@ -231,6 +231,17 @@ h3{
     gap: 2rem;
     align-items: center;
 }
+.gridFactura{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    font-size: 2rem;
+}
+.total{
+    font-size: 2rem;
+}
 /*  FOOTER  */
 
 footer {
