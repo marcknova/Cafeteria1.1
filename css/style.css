@@ -28,10 +28,12 @@ nav a{
     text-decoration: none;
     color: #fff;
 }
+
 nav a:hover{
 color: #FE5F1E ;
 transition: all 0.5s;
 }
+
 .imagen{
     background-image: url('../img/pexels-oriana-ortiz-818789.jpg');
     width: auto;
@@ -42,6 +44,7 @@ transition: all 0.5s;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: soft-light;
 }
+
 
 /*SLIDER*/
 
@@ -274,3 +277,4 @@ footer {
 footer{
     margin-top: 5rem;
 }
+

@@ -1,0 +1,105 @@
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.colornav {
+    background-color: rgba(0, 0, 0, 0);
+}
+.colornavC{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.colornavC .contenedor .barra nav a{
+    
+}
+nav a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+color: #FE5F1E ;
+transition: all 0.5s;
+}
+
+/*Ticket*/
+.container-fact {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+img {
+    margin: 20px 0 30px 0;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    font-size: 0.8rem;
+    margin: 0;   
+}
+
+.factura {
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.data  {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-size: 12px;
+    width: 350px;
+    text-align: center;
+}
+
+.codecontrol {
+    margin: 25px 0 25px 0;
+}
+
+.SeparadorIV{
+    height: 0.1rem;
+    width: 100%;
+    background-color: #000;
+    border-radius: 0.3rem;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 22px;
+}
+
+.cantidadProd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.two {
+    text-align: right;
+}
+
+.three {
+    text-align: right;
+}
+
+.total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.factura:hover {
+    background: rgb(216, 212, 212);
+}
