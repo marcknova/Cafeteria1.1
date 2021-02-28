@@ -109,7 +109,6 @@ $objOperacion->setOperador($opcion);
                     </div>
                     <br>
             </div>
-
           <div>
             <p>Dpto:0091 Ref :091801043</p>
           </div>
@@ -125,6 +124,10 @@ $objOperacion->setOperador($opcion);
                     </div>
                 </div>              
       </div>
-      </body>
+   
+<div class="btns">
+        <a href="../../index.html" class="btn-color btn">Regresar</a>
+</div>
+</body>
 
 </html>

@@ -184,9 +184,16 @@ h3{
 .agregar{
     margin: 0;
 }
-.agregar img{
+.agregar button{
     width: 5rem;
-    height: 3.5rem;
+    border: none;
+    align-items: center;
+    background-color: #EAE7DE;
+    cursor: pointer;
+}
+.agregar img{
+    width: 2rem;
+    height: 2rem;
     margin: 0;
 }
 .factura{
@@ -196,6 +203,9 @@ h3{
 }
 .btns{
     text-align: end;
+}
+.btns a{
+    margin-right: 5rem;
 }
 .btn{
     padding: 1.5rem;
@@ -208,9 +218,9 @@ h3{
 }
 
 .btn-color:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #FE5F1E;
-    transition: all .3s;
+    background-color:#EAE7DE;
+    color: #000;
+    transition: all .5s;
 }
 /*Seleccion*/
 
@@ -220,27 +230,40 @@ h3{
 }
 
 .seleccion input{
-
     border: none;
-    background-color: #c7c7c7;
-    width: 5rem;
+    background-color: #EAE7DE;
+    width: 8rem;
     height: 2rem;
     font-size: 2rem;
     text-align: center;
+    
 }
 .gridform{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    align-items: center;
+   justify-items: center;
 }
 .gridFactura{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
     font-size: 2rem;
+    justify-items: center;
+}
+select{
+    border: none;
+    background-color: #EAE7DE;
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 2rem;
+cursor: pointer;
+    
+}
+option{
+    background: #EAE7DE;
+    
 }
 .total{
     font-size: 2rem;
