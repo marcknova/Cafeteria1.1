@@ -4,6 +4,7 @@ class bean
 
     public $sCantidad;
     public $opcion;
+    public $error;
 
     public function setCantidad($valor)
     {
@@ -20,6 +21,14 @@ class bean
     public function getOperador()
     {
         return $this->opcion;
+    }
+    public function setError($valor)
+    {
+        $this->error = $valor;
+    }
+    public function getError()
+    {
+        return $this->error;
     }
 
     // public function setCantidad2($valor)
