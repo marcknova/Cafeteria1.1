@@ -17,9 +17,18 @@ html{
     background-color: rgba(0, 0, 0, 0);
 }
 .colornavC{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: #EAE7DE;
 }
-
+.colornavC nav a{
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+.colornavC nav a:hover{
+    font-size: 2rem;
+transition: all 0.5s;
+}
 nav a{
     font-size: 1.6rem;
     padding: 1rem;
@@ -28,7 +37,7 @@ nav a{
 }
 
 nav a:hover{
-color: #EAE7DE ;
+color: #FE5F1E ;
 transition: all 0.5s;
 }
 
@@ -269,11 +278,9 @@ option{
 }
 /*session*/
 .gridSession{
-    display: grid;
-    grid-template-columns: repeat(1 1fr) ;
-    grid-template-rows: repeat(2 1fr) ;
+    display: flex;
     justify-content: center;
-   
+    align-items: center;
 }
 .gridSession label{
     font-size: 2rem;  
@@ -334,3 +341,8 @@ footer{
     width: 500px;
     color: #FE5F1E;
 }
+
+
+
+
+/*FACTURA*/

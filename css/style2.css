@@ -139,3 +139,18 @@ h6 {
 .btns a{
     text-decoration: none;
 }
+.btn{
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.btn-color{
+    background-color: #000;
+}
+
+.btn-color:hover{
+    background-color:#EAE7DE;
+    color: #000;
+    transition: all .5s;
+}
