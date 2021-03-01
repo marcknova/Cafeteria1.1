@@ -31,7 +31,6 @@ if (isset($_POST['cantidad'])) {
           text: 'Por favor!',
         })
       </script>";
-
         header('Location: ../../index.html');
         }else
           if (!is_numeric($cantidad)) {
