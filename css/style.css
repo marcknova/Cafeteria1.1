@@ -324,3 +324,9 @@ footer{
     margin-top: 5rem;
 }
 
+/*-----------------*/
+
+.container-factura {
+    width: 500px;
+    color: #FE5F1E;
+}
