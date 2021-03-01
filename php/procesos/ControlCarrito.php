@@ -109,7 +109,9 @@ Swal.fire({
 
       <div class="containerright">
           <div class="number">
-          <h3>156</h3>
+          <h3><?php 
+         echo ($objOperacion->Operaciones())
+        ?></h3>
           <h4>SEAT</h4>
           </div>
           <div class="barcode">
@@ -118,13 +120,10 @@ Swal.fire({
       </div>
 
 </div>  
-
     </div>
- 
         <div class="btns">
             <a href="../../index.html" class="btn-color btn">Regresar</a>
         </div>
-
 
         <script src="js/sweetalert2.js"></script>
 </body>
