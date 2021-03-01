@@ -26,9 +26,9 @@ if (isset($_POST['cantidad'])) {
            echo "<script>
       Swal.fire({
           icon: 'error',
-          title: 'AGREGUE UNA CANTIDAD A COMPRAR',
+          title: 'AGREGUE UNA CANTIDA
+          D A COMPRAR',
           text: 'Por favor!',
-
         })
       </script>";
 
@@ -70,7 +70,7 @@ Swal.fire({
                 <div class="barra">
                     <p>LOGO</p>
                     <nav>
-                        <a href="../index.html">Inicio</a>
+                        <a href="../../index.html">Inicio</a>
 
                         <a href="../productos.html">Productos</a>
                         <a href=""><i class="fas fa-cart-arrow-down"></i></a>
