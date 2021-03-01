@@ -73,7 +73,7 @@ Swal.fire({
                         <a href="../../index.html">Inicio</a>
 
                         <a href="../productos.html">Productos</a>
-                        <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                       
                     </nav>
                 </div>
             </div>
@@ -96,13 +96,17 @@ Swal.fire({
           <h6>TIPO : CAFE</h6>
       </div>
       <div class="columna2">
-        <h2>Dpto: 21546008</h2>
+        <h2>Precio : <?php
+          echo ($objOperacion->Precio());
+          ?></h2>
       </div>
       <div class="columna3">
           <span>Cantidad: <b><?php
-          echo ($objOperacion->Cantidad());
+          echo ($objOperacion->getCantidad());
           ?></b> </span>
-          <span class="space">Precio: <b>$20.00</b></span>
+          <span class="space">Total a pagar: <b><?php
+          echo ($objOperacion->Operaciones());
+          ?></b></span>
       </div>
       
     </div>

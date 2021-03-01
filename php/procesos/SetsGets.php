@@ -7,7 +7,7 @@ class bean
     public $error;
     public $usuario;
     public $contraseña;
-
+    
     public function setUsuario($valor){
         $this->usuario = $valor;
     }
@@ -73,31 +73,6 @@ public function sesion(){
         header('Location: ../sesion.html');
     }
 }*/
-
-    public function Operaciones()
-    {
-        switch ($this->opcion) {
-            case '1':
-                $result = $this->sCantidad * 20;
-                return $result;
-                break;
-            case '2':
-                $result = $this->sCantidad * 10;
-                return $result;
-                break;
-            case '3':
-                $result = $this->sCantidad * 80;
-                return $result;
-                break;
-            case '4':
-                $result = $this->sCantidad * 60;
-                return $result;
-                break;
-            default:
-                break;
-        }
-    }
-
     public function Nombre()
     {
         switch ($this->opcion) {
@@ -126,7 +101,31 @@ public function sesion(){
         }
     }
 
-    public function Cantidad()
+    public function Operaciones()
+    {
+        switch ($this->opcion) {
+            case '1':
+                $result = $this->getCantidad() * 20;
+                return $result;
+                break;
+            case '2':
+                $result = $this->getCantidad() * 10;
+                return $result;
+                break;
+            case '3':
+                $result = $this->getCantidad() * 80;
+                return $result;
+                break;
+            case '4':
+                $result = $this->getCantidad()* 60;
+                return $result;
+                break;
+            default:
+                break;
+        }
+    }
+    /*
+public function Cantidad()
     {
         switch ($this->opcion) {
             case '1':
@@ -143,6 +142,30 @@ public function sesion(){
                 break;
             case '4':
                 $result = $this->sCantidad;
+                return $result;
+                break;
+            default:
+                break;
+        }
+    }
+*/
+    public function Precio()
+    {
+        switch ($this->opcion) {
+            case '1':
+                $result = 20;
+                return $result;
+                break;
+            case '2':
+                $result = 10;
+                return $result;
+                break;
+            case '3':
+                $result = 80;
+                return $result;
+                break;
+            case '4':
+                $result = 60;
                 return $result;
                 break;
             default:
@@ -181,3 +204,11 @@ public function impresion(){
 return $this->$result;
 }*/
 }
+/*
+public function __construct($sCantidad,$opcion){
+    $this->$sCantidad=$sCantidad;
+    $this->$opcion=$opcion;
+
+}
+*/
+?>
