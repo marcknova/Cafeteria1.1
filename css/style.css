@@ -28,7 +28,7 @@ nav a{
 }
 
 nav a:hover{
-color: #FE5F1E ;
+color: #EAE7DE ;
 transition: all 0.5s;
 }
 
@@ -267,6 +267,30 @@ option{
 .total{
     font-size: 2rem;
 }
+/*session*/
+.gridSession{
+    display: grid;
+    grid-template-columns: repeat(1 1fr) ;
+    grid-template-rows: repeat(2 1fr) ;
+    justify-content: center;
+   
+}
+.gridSession label{
+    font-size: 2rem;  
+}
+.gridSession input{
+    border: none;
+    background-color: #EAE7DE;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+.gridSession button{
+    border: none;
+    padding: 1rem!important;
+    margin-top: 2rem;
+}
+
 /*  FOOTER  */
 
 footer {

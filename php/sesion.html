@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba47731c0d.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <header>
+        <div class="colornavC">
+            <div class="contenedor">
+                <div class="barra">
+                    <p>LOGO</p>
+                    <nav>
+                        <a href="procesos/sesion.php">Inicio</a>
+                        <a href="procesos/sesion.php">Productos</a>
+                        <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <div class="gridSession">
+            <form action="procesos/sesion.php" method="POST">
+                <div>
+                    <label for="">Nombre</label>
+                </div>
+                <div>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label for="">Constraseña</label>
+                </div>
+                <div>
+                    <input type="text" name="contraseña">
+                </div>
+                <div class="btns">
+                    <button type="submit" class="btn btn-color">enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

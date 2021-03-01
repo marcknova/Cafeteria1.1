@@ -5,7 +5,21 @@ class bean
     public $sCantidad;
     public $opcion;
     public $error;
+    public $usuario;
+    public $contraseña;
 
+    public function setUsuario($valor){
+        $this->usuario = $valor;
+    }
+    public function getUsuario(){
+        $this->usuario;
+    }
+    public function setContraseña($valor){
+        $this->contraseña = $valor;
+    }
+    public function getContraseña(){
+        $this->contraseña;
+    }
     public function setCantidad($valor)
     {
         $this->sCantidad = $valor;
@@ -47,6 +61,18 @@ class bean
     // {
     //     return $this->opcion2;
     // }
+/*
+public function sesion(){
+    if (!empty($nombre) && !empty($contraseña)) {
+
+        if ($nombre == $objOperacion->getUsuario($nombre) && $contraseña == $objOperacion->getContraseña($contraseña)) {
+    
+            header('Location: ../../index.html');
+        }
+    } else {
+        header('Location: ../sesion.html');
+    }
+}*/
 
     public function Operaciones()
     {
