@@ -324,6 +324,10 @@ footer{
     margin-top: 5rem;
 }
 
+.div-seccion-media ul a {
+    font-size: 30px;
+}
+
 /*-----------------*/
 
 .container-factura {
