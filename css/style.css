@@ -161,11 +161,14 @@ a {
 }
 .card{
     width: 30rem;
-    height: 40rem;
+    height: 33rem;
     background: #EAE7DE;
     margin: 3rem;
 }
 .card img{
+    background-position: center;
+    background-size: conver;
+    background-repeat: no-repeat;
     width: 100%;
     height: 20rem;
 }
