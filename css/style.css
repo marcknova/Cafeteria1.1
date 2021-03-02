@@ -433,8 +433,8 @@ z-index: 1000;
   
   .login-box input[type="submit"]:hover {
     cursor: pointer;
-    background: #C6A07A;
-    color: #30271C;
+    background: #30271C;
+    color: #fff;
   }
   
   .login-box a {
