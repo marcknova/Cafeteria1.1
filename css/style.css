@@ -421,7 +421,8 @@ z-index: 1000;
     font-size: 16px;
   }
   
-  .login-box input[type="submit"] {
+  .login-box .button {
+    display: block;
     border: none;
     outline: none;
     height: 40px;
@@ -429,9 +430,11 @@ z-index: 1000;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
+    width: 250px;
+    margin-bottom: 5px;
   }
   
-  .login-box input[type="submit"]:hover {
+  .login-box .button:hover {
     cursor: pointer;
     background: #30271C;
     color: #fff;
