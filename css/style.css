@@ -287,9 +287,12 @@ option{
 .gridSession{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 15%;
+    justify-items: center;
 }
 .gridSession label{
+ 
+    color: #fff;
     font-size: 2rem;  
 }
 .gridSession input{
