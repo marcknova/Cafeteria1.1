@@ -281,7 +281,9 @@ option{
 .total{
     font-size: 2rem;
 }
+
 /*session*/
+
 .gridSession{
     display: flex;
     justify-content: center;
@@ -321,10 +323,6 @@ footer {
     text-decoration: none;
 }
 
-.fa-facebook-square {
-    
-}
-
 .div-copy {
     display: flex;
     font-size: 1.3rem;
@@ -340,14 +338,10 @@ footer{
     font-size: 30px;
 }
 
-/*-----------------*/
-
 .container-factura {
     width: 500px;
     color: #FE5F1E;
 }
-
-
 
 
 /*slider*/
@@ -368,3 +362,5 @@ z-index: 1000;
 .slick-next{
     z-index: 1000;
 }
+
+/*   */

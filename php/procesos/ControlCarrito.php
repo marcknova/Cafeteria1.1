@@ -80,7 +80,7 @@ Swal.fire({
     </header>
 
   <div class="container-factura">
-    <div class="cabecera">
+    <div class="cabeceras">
         <h1>Coffe: Xpress</h1>
         <div class="iconCheck">
           <i class="far fa-eye"></i>
