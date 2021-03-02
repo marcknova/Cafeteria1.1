@@ -1,7 +1,31 @@
-const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{4,12}$/, // 4 a 12 digitos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
-}
+let btn = document.getElementById('enviar');
+let clave = document.getElementById('clave');
+let usuario = document.getElementById('usuario');
+
+
+
+btn.addEventListener('click', function(evt){
+
+      if(clave.value === ''){
+          console.log('El Campo Contraseña Es Obligatorio')
+          evt.preventDefault();
+          return false;
+
+      }else if(usuario.value === ''){
+
+          console.log('El Campo de Usuario Es Obligatorio')
+          evt.preventDefault();
+          return false;
+
+      }else if(usuario.value != 'RIAS'){
+
+        console.log('Nombre de Usuario No Valido')
+          evt.preventDefault();
+          return false;
+
+      }else if(clave.value != '123456'){
+          console.log("Contraseña Incorrecta");
+        evt.preventDefault();
+        return false;
+      }
+});

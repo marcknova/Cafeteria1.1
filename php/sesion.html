@@ -28,27 +28,25 @@
             </div>
         </div>
     </header>
-    <div class="contenedor">
-        <div class="gridSession">
-            <form action="procesos/sesion.php" method="POST">
-                <div>
-                    <label for="">Nombre</label>
-                </div>
-                <div>
-                    <input type="text" name="nombre">
-                </div>
-                <div>
-                    <label for="">Constraseña</label>
-                </div>
-                <div>
-                    <input type="text" name="contraseña">
-                </div>
-                <div class="btns">
-                    <button type="submit" class="btn btn-color">enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
+
+
+
+    <div class="login-box">
+        <h1>Login Here</h1>
+        <form action="procesos/sesion.php" method="POST" id="formulario">
+         
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter Username" id="usuario">
+        
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter Password" id="clave">
+          <input type="submit" value="Log In" id="enviar">
+          <a href="#">Lost your Password?</a><br>
+          <a href="#">Don't have An account?</a>
+        </form>
+      </div>
+
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
