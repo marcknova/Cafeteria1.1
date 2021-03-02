@@ -1,31 +1,24 @@
 let btn = document.getElementById('enviar');
 let clave = document.getElementById('clave');
 let usuario = document.getElementById('usuario');
-
+let error = document.querySelector('.error');
+error.style.color = 'black';
 
 
 btn.addEventListener('click', function(evt){
-
-      if(clave.value === ''){
-          console.log('El Campo Contraseña Es Obligatorio')
-          evt.preventDefault();
-          return false;
-
-      }else if(usuario.value === ''){
-
-          console.log('El Campo de Usuario Es Obligatorio')
-          evt.preventDefault();
-          return false;
+    evt.preventDefault();
+    var mensajesError = [];
+    if(clave.value === '' && usuario.value === ''){
+        mensajesError.push('Los Campos estan vacios');
 
       }else if(usuario.value != 'RIAS'){
 
-        console.log('Nombre de Usuario No Valido')
-          evt.preventDefault();
-          return false;
+        mensajesError.push('Nombre de Usuario No Valido');
 
       }else if(clave.value != '123456'){
-          console.log("Contraseña Incorrecta");
-        evt.preventDefault();
-        return false;
+        mensajesError.push("Contraseña Incorrecta");
+
       }
+
+      error.innerHTML = mensajesError.join();
 });

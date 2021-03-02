@@ -447,3 +447,8 @@ z-index: 1000;
   .login-box a:hover {
     color: #C6A07A;
   }
+
+  .error {
+      margin-top: 20px;
+      font-size: 20px;
+  }
