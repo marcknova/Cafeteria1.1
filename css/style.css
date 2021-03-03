@@ -455,3 +455,8 @@ z-index: 1000;
       margin-top: 20px;
       font-size: 20px;
   }
+
+  .formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
