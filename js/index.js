@@ -16,10 +16,8 @@ btn.addEventListener('click', (evt) => {
     if(clave.value === '' && usuario.value === ''){
         mensajesError.push('Los Campos estan vacios');
 
-
-      }else if(usuario.value != 'RIAS' && clave.value != '123456'){
+      }else if(usuario.value != 'RIAS' || clave.value != '123456'){
         mensajesError.push('Nombre de Usuario o Contraseña No Valido');
-
 
       }
 

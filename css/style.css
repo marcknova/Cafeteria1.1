@@ -453,10 +453,5 @@ z-index: 1000;
 
   .error {
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 15px;
   }
-
-  .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
