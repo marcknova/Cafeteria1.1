@@ -152,12 +152,22 @@ a {
 
 
 /* PRODUCTOS */
-
+.areaProductos{
+    margin: 2rem;
+    width: 100%;
+    height: 50rem;
+    background: #c7c7c7;
+}
 .productos{
     display: flex;
     margin: 2rem;
     justify-content: center;
 
+}
+.productosgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 .card{
     width: 30rem;

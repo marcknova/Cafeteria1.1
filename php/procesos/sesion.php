@@ -8,6 +8,6 @@ if (!empty($nombre) && !empty($contraseña)) {
     }else{
         header('Location: ../sesion.html');
     }
-} else {
+}else {
     header('Location: ../sesion.html');
 }
