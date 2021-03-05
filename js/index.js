@@ -26,3 +26,12 @@ btn.addEventListener('click', (evt) => {
 });
 
 
+$(document).ready(function(){
+  $('.categorias').tabs()
+});
+
+$(document).ready(function) {
+$( "#dialog" ).dialog({ autoOpen: false });
+$( "#opener" ).click(function() {
+  $( "#dialog" ).dialog( "open" );
+});}
