@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="../css/jquery-ui.min.css">
    <script src="../js/jquery-ui.min.js"></script>
    <script src="../js/index.js"></script>
+   <script src="../js/app.js"></script>
    <script src="https://kit.fontawesome.com/ba47731c0d.js" crossorigin="anonymous"></script>
    <title>productos</title>
 </head>
@@ -35,15 +36,41 @@
       <h1>Aca puede escoger todos sus productos ofertados</h1>
    </header>
    <div class="contenedor">
+<!-------------------------------------------->
 
-      <div class="acordion">
-         <h2>bebidas</h2>
-         <div><button>vermas</button></div>
-         <h2>comida</h2>
-         <div><button>vermas</button></div>
-         <h2>combos</h2>
-         <div><button>vermas</button></div>
+<div id="container-main">
+
+   <h1>Preguntas Frecuentes</h1>
+   
+      <div class="accordion-container">
+      
+         <a href="#" class="accordion-titulo">Pregunta I<span class="toggle-icon"></span></a>
+         <div class="accordion-content">
+            <img src="https://www.teahub.io/photos/full/5-53773_coffee-images-hd.jpg" alt=""/>
+            <h2>¿Por qué no ponerle azúcar al café si no me gusta el amargo?</h2> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   
+   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+         
       </div>
+      
+      <div class="accordion-container">
+         <a href="#" class="accordion-titulo">Pregunta II<span class="toggle-icon"></span></a>
+         <div class="accordion-content">
+            <img src="https://www.wallpapertip.com/wmimgs/85-859038_cafe-rico.jpg" alt=""/>
+            <h2>¿Una taza de café bueno tiene que teñir, ser color negro oscuro?</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+   
+   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         </div>
+      </div>
+   
+   </div>
+
+
+<!---------------------------------->
+
       <div class="areaProductos">
          <h2>Agregue(arrastrando) sus productos</h2>
       </div>
@@ -204,7 +231,6 @@
             $(".card").draggable();
             $(".footer-card").sortable();
             $(".areaProductos").resizable();
-            $(".acordion").accordion();
             $("#dialog").dialog({ autoOpen: false });
          });
          $("#opener").click(function () {

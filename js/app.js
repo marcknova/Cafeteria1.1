@@ -8,10 +8,31 @@ $(document).ready(function(){
   })
 });
 
+$(function(){
+  $(".accordion-titulo").click(function(e){
+           
+        e.preventDefault();
+    
+        var contenido=$(this).next(".accordion-content");
+
+        if(contenido.css("display")=="none"){ //open		
+          contenido.slideDown(250);			
+          $(this).addClass("open");
+        }
+        else{ //close		
+          contenido.slideUp(250);
+          $(this).removeClass("open");	
+        }
+
+      });
+});
+
+
 $(document).ready(function() {
   $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
   $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 } );
+
 
 $(document).ready( function() {
 
@@ -21,6 +42,8 @@ $(document).ready( function() {
     "á": "a",
     "ö": "o"
   };
+
+
   var normalize = function( term ) {
     var ret = "";
     for ( var i = 0; i < term.length; i++ ) {
@@ -28,6 +51,7 @@ $(document).ready( function() {
     }
     return ret;
   };
+
 
   $( "#developer" ).autocomplete({
     source: function( request, response ) {
