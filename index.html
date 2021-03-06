@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffe : Xpress</title>
 
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -189,18 +189,34 @@
     <!-- DESCRIPTION  -->
 
              <!--------------------------------------------------------------------------------->
-              </head>
-              <body>
-               
+    <div class="container-tabs">
+        <div class="tabs-ofrecer">
+            <h2>Lo que Ofrecemos</h2>
+        </div>
+        <div class="tabs-tittle">
+            <h2>
+                <span>Acerca de nuestros Productos</span> 
+            </h2>
+        </div>
+        <div class="SeparadorIV">
+        </div>
               <div id="tabs">
+                  
                 <ul>
                   <li><a href="#tabs-1">Cafe Lette</a></li>
                   <li><a href="#tabs-2">Chocolate Caliente</a></li>
                   <li><a href="#tabs-3">Vainilla Latte</a></li>
                 </ul>
+                
                 <div id="tabs-1">
-                  <h2>Acerca De</h2>
-                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                  <h2>Cafe Latte</h2>
+                  <p>El Caffé Latte es un tipo de café preparado a base de café espresso y leche al vapor. Suele prepararse con un tercio de espresso, dos tercios de leche calentada y un centímetro de espuma. <br>
+
+                    También se le suele llamar Latte Macchiato, que en italiano viene a significar «leche manchada», por eso que contenga mayor proporción de leche que de café. <br>
+                    
+                    También se confunde con el capuchino, pero lo cierto es que tiene menos espuma y suele servirse en una taza más alta. <br>
+                    
+                    Por lo tanto, su principal diferencia con respecto al café con leche es su modo de preparación. El café con leche contiene una cantidad más equitativa de leche y de café, aunque según los gustos de cada uno puede llegar a variar.</p>
                 </div>
                 <div id="tabs-2">
                   <h2>Chocolate Caliente</h2>
@@ -212,17 +228,35 @@
                   <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
                 </div>
               </div>
+    </div>
 <!---------------------------------------------->
+<div class="container-form">
+    <div id="after_submit">
+    </div>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+<div class="ui-widget">
+<label class="required" for="developer">Your name:</label><br />
+<input id="developer" class="input" name="name" type="text" value="" size="30" /><br />
+<span id="name_validation" class="error_message"></span>
+</div>
+<div class="row">
+<label class="required" for="email">Your email:</label><br />
+<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+<span id="email_validation" class="error_message"></span>
+</div>
+<div class="row">
+    <label class="required" for="date">Date:</label><br />
+    <input type="text" id="datepicker">
+</div>
+<div class="row">
+<label class="required" for="message">Your message:</label><br />
+<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+<span id="message_validation" class="error_message"></span>
+</div>
 
-              <p>Date: <input type="text" id="datepicker"></p>
-
-<!---------------------------------------------->
-              <div class="ui-widget">
-                <form>
-                <label for="developer">Developer: </label>
-                <input id="developer">
-                </form>
-              </div>
+<input id="submit_button" type="submit" value="Send email" />
+</form>
+</div>
 <!---------------------------------------------->
 
     <footer>
