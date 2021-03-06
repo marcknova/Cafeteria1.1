@@ -231,32 +231,42 @@
     </div>
 <!---------------------------------------------->
 <div class="container-form">
-    <div id="after_submit">
+    <div class="articles">
+        <div class="article-tittle">
+            <h2>Ultimos Articulos</h2>
+        </div>
+        <div class="notice">
+            <a href="#"><h3>CAFÉ DE ESPECIALIDAD Y LA TERCERA OLA: TODO SOBRE EL MOVIMIENTO</h3></a>
+            <p>Julio 2020</p>
+        </div>
+        <div class="notice">
+            <a href="#"><h3>CÓMO PREPARAR CAFÉ EN GRANO: 5 FORMAS FÁCILES PARA EL TUYO</h3></a>
+            <p>Agosto 2023</p>
+        </div>
     </div>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-<div class="ui-widget">
-<label class="required" for="developer">Your name:</label><br />
-<input id="developer" class="input" name="name" type="text" value="" size="30" /><br />
-<span id="name_validation" class="error_message"></span>
-</div>
-<div class="row">
-<label class="required" for="email">Your email:</label><br />
-<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-<span id="email_validation" class="error_message"></span>
-</div>
-<div class="row">
-    <label class="required" for="date">Date:</label><br />
-    <input type="text" id="datepicker">
-</div>
-<div class="row">
-<label class="required" for="message">Your message:</label><br />
-<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-<span id="message_validation" class="error_message"></span>
+
+  <form class="form-jq"> 
+    <fieldset>
+        <h2>Contacto</h2>
+      <div class="row"> 
+        <label class="required" for="developer">Your name</label><br />
+        <input id="developer" class="input" name="name" title="Please provide your firstname."/><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label for="lastname">Lastname</label> <br>
+        <input id="lastname" name="lastname" title="Please provide also your lastname.">
+      </div>
+      <div class="row">
+        <label class="required" for="date">Date:</label><br />
+        <input type="text" id="datepicker" title="Your date when you send this message">
+        <br>
+      </div>
+      <button class="" type="submit">Enviar</button>
+    </fieldset>
+  </form>
 </div>
 
-<input id="submit_button" type="submit" value="Send email" />
-</form>
-</div>
 <!---------------------------------------------->
 
     <footer>

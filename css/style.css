@@ -318,34 +318,48 @@ option{
     margin-top: 2rem;
 }
 
+/* Formulario  JQ*/
+
 .container-form {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
     background: #212121;
-    height: 100%
-    
-}
-#contact_form {
-    margin-left: 30px;
+    height: 100%;
+    color: #fff;
+    padding: 60px;
 }
 
-.ui-widget .required{
-    padding: 10px;
-    font-size: 18px; 
+.notice h3 {
+    color: #fff;
 }
 
-.ui-widget .input {
-    padding: 5px;
-    font-size: 10px;
-    margin-left: 10px; 
+.notice p {
+    color: #C6A07A;
 }
-.row {
-    padding: 10px;
+.notice h3:hover {
+    color: #C6A07A;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset button{
+    background: #C7A17A;
+    color: #c7c7c7;
+}
+
+.form-jq {
+    display: block;
+    width: 40rem;
     font-size: 18px;
 }
-
-#submit_button {
-    padding: 15px;
+.row {
+    display: flex;
+    justify-content: right;
 }
+
 
 /*  FOOTER  */
 
@@ -677,3 +691,17 @@ z-index: 1000;
     text-align: center;
 }
 
+/*    */
+
+label {
+    display: inline-block; width: 5em;
+  }
+  fieldset div {
+    margin-bottom: 2em;
+  }
+  fieldset .help {
+    display: inline-block;
+  }
+  .ui-tooltip {
+    width: 210px;
+  }
