@@ -324,6 +324,7 @@ option{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
+    
     background: #212121;
     height: 100%;
     color: #fff;
@@ -332,6 +333,7 @@ option{
 
 .notice h3 {
     color: #fff;
+    font-family: cursive;
 }
 
 .notice p {
@@ -524,6 +526,7 @@ z-index: 1000;
        border-right-width: 0 !important; 
        margin: 0 -1px 1em 0; 
        background: #C7A17A
+       
     }
   .ui-tabs-vertical .ui-tabs-nav li a {
        display:inline-block;
@@ -572,6 +575,7 @@ z-index: 1000;
         width: 50%;
         color: #C7A17A;
         text-align: justify;
+        font-size: 18px;
     }
 
     /*   */
@@ -704,4 +708,15 @@ label {
   }
   .ui-tooltip {
     width: 210px;
+  }
+
+  /*   */
+
+  #menu {
+      padding: 10px;
+    font-size: 18px;
+  }
+
+  #menu div {
+      padding: 15px;
   }
