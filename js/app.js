@@ -23,7 +23,6 @@ $(function(){
           contenido.slideUp(250);
           $(this).removeClass("open");	
         }
-
       });
 });
 
@@ -77,3 +76,18 @@ $(document).ready( function() {
     }
   });
 } );
+$(function() {
+  $(".card").draggable();
+  $(".footer-card").sortable();
+  $("input").checkboxradio();
+  $("fieldset").controlgroup();
+  $("#menu").menu();
+  $(".categorias").tabs();
+  $(".areaProductos").resizable();
+  $("#dialog").dialog({
+      autoOpen: false
+  });
+});
+$("#opener").click(function() {
+  $("#dialog").dialog("open");
+});

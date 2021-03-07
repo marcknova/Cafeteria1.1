@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/app.js"></script>
     <script src="https://kit.fontawesome.com/ba47731c0d.js" crossorigin="anonymous"></script>
     <title>productos</title>
 </head>
@@ -197,17 +196,13 @@
         <div class="container-buttom">
             <button id="opener">
          <h2>Proximas Ofertas</h2>
-      </button>
+             </button>
             <div id="dialog" title="Mensaje">
                 <h3>Por El Momento no hay ofertas disponibles</h3> <br>
                 <h4>Proximas Ofertas hasta el: 02/12/23</h4>
             </div>
-
         </div>
-
         <!------->
-
-
         <ul id="menu">
             <li class="ui-state-disabled">
                 <div>Coffe :Xpress</div>
@@ -269,23 +264,7 @@
 
 
         <!----  -->
-        <script>
-            $(function() {
-                $("input").checkboxradio();
-                $("fieldset").controlgroup();
-                $("#menu").menu();
-                $(".categorias").tabs();
-                $(".card").draggable();
-                $(".footer-card").sortable();
-                $(".areaProductos").resizable();
-                $("#dialog").dialog({
-                    autoOpen: false
-                });
-            });
-            $("#opener").click(function() {
-                $("#dialog").dialog("open");
-            });
-        </script>
+        <script  src="../js/app.js"></script>
 
 </body>
 
