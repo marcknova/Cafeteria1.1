@@ -391,7 +391,11 @@ footer {
 }
 
 .div-seccion-media ul a {
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.div-seccion-media ul a:hover {
+    color: #C6A07A;
 }
 
 .container-factura {
@@ -591,7 +595,6 @@ z-index: 1000;
 /*                                 Index de Productos                     */
 
 
-
 #container-main{
     background: #EAE7DE;
     padding: 50px;
@@ -608,7 +611,6 @@ z-index: 1000;
 	margin: 0 0 20px;
 	clear:both;
     background: #EAE7DE;
-
 }
 
 .accordion-titulo {
@@ -714,9 +716,29 @@ label {
 
   #menu {
       padding: 10px;
-    font-size: 18px;
+      font-size: 18px;
   }
 
   #menu div {
+      background: #C6A07A;
       padding: 15px;
+      border: 1px solid #000;
   }
+
+  /* LOCATION */
+
+.widget fieldset {
+    display: flex;
+    justify-content: center;
+}
+
+.widget fieldset legend {
+    text-align: center;
+    color: #30271C;  
+}
+  .widget label {
+      font-size: 15px;
+      padding: 20px;
+      width: 100px;
+  }
+
