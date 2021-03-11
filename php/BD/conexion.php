@@ -1,28 +1,26 @@
 <?php
-    include_once "./config/config.php";
 
-    class Conexion {
-        private $host;
-        private $user;
-        private $password;
-        private $bd;
+    class conexion {
+        private $host= "localhost";
+        private $user ="root";
+        private $password="";
+        private $bd="example";
+        private $conexion;
         public function __construct()
         {
-            $this->host = HOST;
-            $this->user = USER;
-            $this->password = PASSWORD;
-            $this->bd = BD;
+            $connectionString = "mysql:host=".$this->host.";dbname=".$this->bd.";charset=utf8";
+            try{
+                $this->conexion = new PDO($connectionString, $this->user, $this->password);
+                $this->conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+               }catch(PDOExeption $e){
+                   $this->conexion='ERROR AL CONECTAR ALA BASE DE DATOS';
+                    die("ERROR : ".$e->getMessage());
+               }
         }
-
         public function connect () {
-           try{
-            $conexion = "mysql:host=".$this->host.";dbname=".$this->bd.";charset=utf8";
-            $atributos = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
-            $objetPDO = new PDO($conexion, $this->user, $this->password,$atributos);
-            return $objetPDO;
-           }catch(PDOExeption $e){
-                die("ERROR : ".$e->getMessage());
-           }
+           return $this->conexion;
         }
+        
      }
+    
 ?>

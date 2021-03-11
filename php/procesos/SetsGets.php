@@ -1,4 +1,6 @@
 <?php
+
+
 class bean
 {
 
@@ -44,7 +46,7 @@ class bean
     {
         return $this->error;
     }
-
+    
     // public function setCantidad2($valor)
     // {
     //     $this->sCantidad2 = $valor;
@@ -171,7 +173,10 @@ public function Cantidad()
             default:
                 break;
         }
-    }
+    }    
+         
+           
+
     // public function Operaciones2 () {
     //     switch ($this->opcion22) {
     //         case '1':
@@ -211,4 +216,6 @@ public function __construct($sCantidad,$opcion){
 
 }
 */
+
+
 ?>
