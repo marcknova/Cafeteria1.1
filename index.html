@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/sweetalert2.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -120,157 +118,177 @@
 
     <!-- PRODUCTOS -->
     <div class="contenedor">
-        <div class="slider  Posicionbtn productos">
-        
-        <div class="card">
-            <div class="img">
-                <img src="img/cards/pexels-aphiwat-chuangchoem-437716.jpg" alt="">
+        <div class="slider Posicionbtn productos">
+            <div class="card">
+                <div class="img">
+                    <img src="img/cards/pexels-aphiwat-chuangchoem-437716.jpg" alt="">
+                </div>
+                <div class="footer-card">
+                    <h2>Café Latte</h2>
+                    <h3>Precio : $20</h3>
+                </div>
             </div>
-            <div class="footer-card">
+            <div class="card">
+                <div class="img">
+                    <img src="img/cards/hot-chocolate-1058197_1920.jpg" alt="">
+                </div>
+                <div class="footer-card">
+                    <h2>Chocolate Caliente</h2>
+                    <h3>Precio : $10</h3>
 
-                <h2>Café Latte</h2>
-                <h3>Precio : $20</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/como-preparar-cafe-colombiano-758887.jpg" alt="">
+                </div>
+                <div class="footer-card">
+                    <h2>Vanilla Latte</h2>
+                    <h3>Precio : $80</h3>
 
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/cards/hot-chocolate-1058197_1920.jpg" alt="">
-            </div>
-            <div class="footer-card">
-                <h2>Chocolate Caliente</h2>
-                <h3>Precio : $10</h3>
+            <div class="card">
+                <div class="img">
+                    <img src="img/cards/coffee-4648041_1920.jpg" alt="">
+                </div>
+                <div class="footer-card">
+                    <h2>Helado Café Mocha</h2>
+                    <h3>Precio : $60</h3>
 
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/como-preparar-cafe-colombiano-758887.jpg" alt="">
-            </div>
-            <div class="footer-card">
-                <h2>Vanilla Latte</h2>
-                <h3>Precio : $80</h3>
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/cards/coffee-4648041_1920.jpg" alt="">
-            </div>
-            <div class="footer-card">
-                <h2>Helado Café Mocha</h2>
-                <h3>Precio : $60</h3>
-
+                </div>
             </div>
         </div>
     </div>
+    <div class="seleccion agregar gridform">
+        <input type="text" name="cantidad" id="cantidad">
+        <select name="Opcion" id="Opcion">
+            <option data-precio="20" value="1">Café Latte</option>
+            <option data-precio="10" value="2">Chocolate Caliente</option>
+            <option data-precio="80" value="3">Vanilla Latte</option>
+            <option data-precio="60" value="4">Helado Café Mocha</option>
+        </select>
+        <button type="button" id="enviar">
+            <img src="img/icon/1485969929-12-plus_78898.svg" alt="">
+        </button>
     </div>
-        <div class="seleccion">
-            <form action="php/procesos/ControlCarrito.php" method="POST" class="agregar gridform">
-                <input type="text" name="cantidad">
-                <select name="Opcion" id="">
-                    <option value="1">Café Latte</option>
-                    <option value="2">Chocolate Caliente</option>
-                    <option value="3">Vanilla Latte</option>
-                    <option value="4">Helado Café Mocha</option>
-                </select>
-                <button type="submit" name="submit" onclick="">
-                    <img src="img/icon/1485969929-12-plus_78898.svg" alt="">
-                </button>
-            </form>
-
-        </div>
-        <div class="btns">
-            <a href="" class="btn btn-color">Ver mas</a>
-        </div>
-
+    <div class="btns">
+        <a href="" class="btn btn-color">Ver mas</a>
     </div>
+    <div id="salida"></div>
+    </div>
+
 
     <!-- DESCRIPTION  -->
 
-             <!--------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------->
     <div class="container-tabs">
         <div class="tabs-ofrecer">
             <h2>Lo que Ofrecemos</h2>
         </div>
         <div class="tabs-tittle">
             <h2>
-                <span>Acerca de nuestros Productos</span> 
+                <span>Acerca de nuestros Productos</span>
             </h2>
         </div>
         <div class="SeparadorIV">
         </div>
-              <div id="tabs">
-                  
-                <ul>
-                  <li><a href="#tabs-1">Cafe Lette</a></li>
-                  <li><a href="#tabs-2">Chocolate Caliente</a></li>
-                  <li><a href="#tabs-3">Vainilla Latte</a></li>
-                </ul>
-                
-                <div id="tabs-1">
-                  <h2>Cafe Latte</h2>
-                  <p>El Caffé Latte es un tipo de café preparado a base de café espresso y leche al vapor. Suele prepararse con un tercio de espresso, dos tercios de leche calentada y un centímetro de espuma. <br>
+        <div id="tabs">
 
-                    También se le suele llamar Latte Macchiato, que en italiano viene a significar «leche manchada», por eso que contenga mayor proporción de leche que de café. <br>
-                    
-                    También se confunde con el capuchino, pero lo cierto es que tiene menos espuma y suele servirse en una taza más alta. <br>
-                    
-                    Por lo tanto, su principal diferencia con respecto al café con leche es su modo de preparación. El café con leche contiene una cantidad más equitativa de leche y de café, aunque según los gustos de cada uno puede llegar a variar.</p>
-                </div>
-                <div id="tabs-2">
-                  <h2>Chocolate Caliente</h2>
-                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                </div>
-                <div id="tabs-3">
-                  <h2>Vainilla Latte</h2>
-                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                </div>
-              </div>
+            <ul>
+                <li><a href="#tabs-1">Cafe Lette</a></li>
+                <li><a href="#tabs-2">Chocolate Caliente</a></li>
+                <li><a href="#tabs-3">Vainilla Latte</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                <h2>Cafe Latte</h2>
+                <p>El Caffé Latte es un tipo de café preparado a base de café espresso y leche al vapor. Suele
+                    prepararse con un tercio de espresso, dos tercios de leche calentada y un centímetro de espuma. <br>
+
+                    También se le suele llamar Latte Macchiato, que en italiano viene a significar «leche manchada», por
+                    eso que contenga mayor proporción de leche que de café. <br>
+
+                    También se confunde con el capuchino, pero lo cierto es que tiene menos espuma y suele servirse en
+                    una taza más alta. <br>
+
+                    Por lo tanto, su principal diferencia con respecto al café con leche es su modo de preparación. El
+                    café con leche contiene una cantidad más equitativa de leche y de café, aunque según los gustos de
+                    cada uno puede llegar a variar.</p>
+            </div>
+            <div id="tabs-2">
+                <h2>Chocolate Caliente</h2>
+                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
+                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
+                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
+                    in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis.
+                    Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat.
+                    Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
+                    felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div id="tabs-3">
+                <h2>Vainilla Latte</h2>
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                    vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
+                    Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+                    Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
+                    facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse
+                    potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor
+                    eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi
+                    lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum
+                    rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus
+                    hendrerit hendrerit.</p>
+            </div>
+        </div>
     </div>
-<!---------------------------------------------->
-<div class="container-form">
-    <div class="articles">
-        <div class="article-tittle">
-            <h2>Ultimos Articulos</h2>
+    <!---------------------------------------------->
+    <div class="container-form">
+        <div class="articles">
+            <div class="article-tittle">
+                <h2>Ultimos Articulos</h2>
+            </div>
+            <div class="notice">
+                <a href="#">
+                    <h3>CAFÉ DE ESPECIALIDAD Y LA TERCERA OLA: TODO SOBRE EL MOVIMIENTO</h3>
+                </a>
+                <p>Julio 2020</p>
+            </div>
+            <div class="notice">
+                <a href="#">
+                    <h3>CÓMO PREPARAR CAFÉ EN GRANO: 5 FORMAS FÁCILES PARA EL TUYO</h3>
+                </a>
+                <p>Agosto 2023</p>
+            </div>
         </div>
-        <div class="notice">
-            <a href="#"><h3>CAFÉ DE ESPECIALIDAD Y LA TERCERA OLA: TODO SOBRE EL MOVIMIENTO</h3></a>
-            <p>Julio 2020</p>
-        </div>
-        <div class="notice">
-            <a href="#"><h3>CÓMO PREPARAR CAFÉ EN GRANO: 5 FORMAS FÁCILES PARA EL TUYO</h3></a>
-            <p>Agosto 2023</p>
-        </div>
+
+        <form class="form-jq">
+            <fieldset>
+                <h2>Contacto</h2>
+                <div class="row">
+                    <label class="required" for="developer">Your name</label><br />
+                    <input id="developer" class="input" name="name" title="Please provide your firstname." /><br />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label for="lastname">Lastname</label> <br>
+                    <input id="lastname" name="lastname" title="Please provide also your lastname.">
+                </div>
+                <div class="row">
+                    <label class="required" for="date">Date:</label><br />
+                    <input type="text" id="datepicker" title="Your date when you send this message">
+                    <br>
+                </div>
+                <button class="" type="submit">Enviar</button>
+            </fieldset>
+        </form>
     </div>
 
-  <form class="form-jq"> 
-    <fieldset>
-        <h2>Contacto</h2>
-      <div class="row"> 
-        <label class="required" for="developer">Your name</label><br />
-        <input id="developer" class="input" name="name" title="Please provide your firstname."/><br />
-        <span id="name_validation" class="error_message"></span>
-      </div>
-      <div class="row">
-        <label for="lastname">Lastname</label> <br>
-        <input id="lastname" name="lastname" title="Please provide also your lastname.">
-      </div>
-      <div class="row">
-        <label class="required" for="date">Date:</label><br />
-        <input type="text" id="datepicker" title="Your date when you send this message">
-        <br>
-      </div>
-      <button class="" type="submit">Enviar</button>
-    </fieldset>
-  </form>
-</div>
-
-<!---------------------------------------------->
+    <!---------------------------------------------->
 
     <footer>
-        
+
         <div class="div-seccion-media">
             <ul>
                 <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-square"></a>
@@ -284,7 +302,48 @@
             <span> © 2018 – 2019 Todos los derechos reservados</span>
         </div>
     </footer>
+<script src="js/index.js"></script>
+    <script src="js/sweetalert2.js"></script>
+    <script>
+        function pedido() {
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            )
+        }
+        $(function () {
+            /*Evitar funciones in line*/
+            $('#Opcion').on('change', function () {
+                /*Referencia al option seleccionado*/
+                let mSelect = $('option:selected', this);
+                let opcion = mSelect.val();
+                let Nombre = mSelect.text();
+                let valor = $('#cantidad').val();
 
+                let postData = {
+                    Nombre: Nombre,
+                    cantidad: valor,
+                    Precio: mSelect.data('precio'),
+                    Total: valor * mSelect.data('precio')
+                };
+
+                console.log(postData);
+
+               return postData;
+            });
+            $.ajax({
+                    url: 'php/procesos/insertarProductos.php',
+                    method: 'post',
+                    dataType: 'json',
+                    data: postData
+                }).done(function (data) {
+                    pedido();
+                    console.log(data);
+                })
+        });
+    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

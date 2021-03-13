@@ -19,12 +19,9 @@ class Inventario extends conexion
         $this->$Cantidad = $Cantidad;
         $this->$Precio = $Precio;
         $this->$Total = $Total;
-        $insert = $this->conexion->prepare(("INSERT INTO inventario(NProducto, CantidadComprada, Precio.Total) VALUES(?,?,?,?)"));
-        $insert->bindParam('?',$this->$NProducto,PDO::PARAM_STR, 25);
-        $insert->bindParam('?',$this->$Cantidad,PDO::PARAM_STR, 25);
-        $insert->bindParam('?',$this->$Precio,PDO::PARAM_STR, 25);
-        $insert->bindParam('?',$this->$Total,PDO::PARAM_STR, 25);
-        $Ninsert = $insert->execute();
+        $insert = $this->conexion->prepare(("INSERT INTO inventario(NProducto, CantidadComprada, Precio,Total) VALUES(?,?,?,?)"));
+        $Data= array($this->$NProducto,$this->$Cantidad,$this->$Precio,$this->$Total);
+        $Ninsert = $insert->execute($Data);
         $idinsert= $this->conexion->lastInsertId();
         return $idinsert;
     }

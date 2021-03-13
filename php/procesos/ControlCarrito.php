@@ -17,13 +17,12 @@
 <?php
 
 include_once "SetsGets.php";
-include_once ("inserts.php");
-$opcion = $_POST['Opcion'];
-$cantidad = $_POST['cantidad'];
+
+$postData = json_decode($_POST['postData']);
+echo $postData;
+
+
 $objOperacion = new bean();
-$objInsertInventarioBD= new Inventario();
-$insert=$objInsertInventarioBD->InsertInventario("MarcoMeLaPela",8,15.50,50.8);
-echo $insert;
 if (isset($_POST['cantidad'])) {
     if (empty($cantidad)) {
            echo "<script>
@@ -47,14 +46,8 @@ Swal.fire({
 </script>";
             header('Location: ../../index.html');
     } else {
-        // $opcion2 = $_POST['Opcion2'];
-        // $cantidad2 = $_POST['cantidad2'];
-
         $objOperacion->setCantidad($cantidad);
         $objOperacion->setOperador($opcion);
-// $objOperacion->setCantidad2($cantidad2);
-        // $objOperacion->setOperador2($opcion2);
-        //$objOperacion->Operaciones();
         echo "<script>
         Swal.fire(
           'Good job!',

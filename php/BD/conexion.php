@@ -20,7 +20,6 @@
         public function connect () {
            return $this->conexion;
         }
-        
      }
     
 ?>
