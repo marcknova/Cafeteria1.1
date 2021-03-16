@@ -1,4 +1,4 @@
-// JavaScript Validacion de registro
+ // JavaScript Validacion de registro
 
 $('document').ready(function()
 { 		 

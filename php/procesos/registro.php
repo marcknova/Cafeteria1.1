@@ -1,4 +1,3 @@
-
      <?php
 include_once "SetsGets.php";
 $nombre = $_POST['nombre'];

@@ -47,34 +47,6 @@ class bean
         return $this->error;
     }
     
-    // public function setCantidad2($valor)
-    // {
-    //     $this->sCantidad2 = $valor;
-    // }
-    // public function getCantidad2()
-    // {
-    //     return $this->sCantidad2;
-    // }
-    // public function setOperador2($valor)
-    // {
-    //     $this->opcion2 = $valor;
-    // }
-    // public function getOperador2()
-    // {
-    //     return $this->opcion2;
-    // }
-/*
-public function sesion(){
-    if (!empty($nombre) && !empty($contraseña)) {
-
-        if ($nombre == $objOperacion->getUsuario($nombre) && $contraseña == $objOperacion->getContraseña($contraseña)) {
-    
-            header('Location: ../../index.html');
-        }
-    } else {
-        header('Location: ../sesion.html');
-    }
-}*/
     public function Nombre()
     {
         switch ($this->opcion) {
@@ -126,31 +98,7 @@ public function sesion(){
                 break;
         }
     }
-    /*
-public function Cantidad()
-    {
-        switch ($this->opcion) {
-            case '1':
-                $result = $this->sCantidad;
-                return $result;
-                break;
-            case '2':
-                $result = $this->sCantidad;
-                return $result;
-                break;
-            case '3':
-                $result = $this->sCantidad;
-                return $result;
-                break;
-            case '4':
-                $result = $this->sCantidad;
-                return $result;
-                break;
-            default:
-                break;
-        }
-    }
-*/
+    
     public function Precio()
     {
         switch ($this->opcion) {
@@ -174,48 +122,4 @@ public function Cantidad()
                 break;
         }
     }    
-         
-           
-
-    // public function Operaciones2 () {
-    //     switch ($this->opcion22) {
-    //         case '1':
-    //             $result2 = $this->sCantidad2 * 40;
-    //             return  $result2;
-    //             break;
-    //         case '2':
-    //              $result2 = $this->sCantidad2 * 50;
-    //             return  $result2;
-    //             break;
-    //         case '3':
-    //              $result2 = $this->sCantidad2 * 90;
-    //             return  $result2;
-    //             break;
-    //         case '4':
-    //              $result2 = $this->sCantidad2 * 70;
-    //             return  $result2;
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
-
-    // public function suma ($a , $b) {
-
-    //     return $suma = $a + $b;
-    // }
-    /*
-public function impresion(){
-return $this->$result;
-}*/
-}
-/*
-public function __construct($sCantidad,$opcion){
-    $this->$sCantidad=$sCantidad;
-    $this->$opcion=$opcion;
-
-}
-*/
-
-
 ?>

@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>Registro de usuario usando Ajax PHP y MySQL - BaulPHP</title>
+<title>Registro de usuario usando Ajax PHP y MySQL</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="assets/signup-form.css" type="text/css" />
 
@@ -23,7 +23,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"> <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="../sesion.html">Inicio <span class="sr-only">(current)</span></a> </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
@@ -109,9 +109,7 @@
 </div>
 <!-- Fin container -->
 <footer class="footer">
-  <div class="container"> <span class="text-muted">
-    <p>Códigos <a href="https://www.baulphp.com/" target="_blank">BaulPHP</a></p>
-    </span> </div>
+
 </footer>
 <script src="assets/jquery-1.12.4-jquery.min.js"></script> 
 <script src="assets/jquery.validate.min.js"></script> 
