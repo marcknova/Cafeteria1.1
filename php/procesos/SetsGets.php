@@ -121,5 +121,6 @@ class bean
             default:
                 break;
         }
-    }    
+    }
+}    
 ?>

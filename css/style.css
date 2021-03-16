@@ -221,7 +221,7 @@ h3 {
 }
 
 .agregar {
-    margin: 0;
+    margin: 1rem;
 }
 
 .agregar button {
@@ -272,10 +272,13 @@ h3 {
 
 
 /*Seleccion*/
-
+.margenselection{
+    margin: 1rem;
+}
 .seleccion {
     display: flex;
     justify-content: center;
+    mar
 }
 
 .seleccion input {
@@ -287,12 +290,7 @@ h3 {
     text-align: center;
 }
 
-.gridform {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-items: center;
-}
+
 
 .gridFactura {
     display: grid;

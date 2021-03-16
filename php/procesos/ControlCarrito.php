@@ -20,36 +20,14 @@ include_once "SetsGets.php";
 $objOperacion = new bean();
 if (isset($_POST['cantidad'])) {
     if (empty($cantidad)) {
-           echo "<script>
-      Swal.fire({
-          icon: 'error',
-          title: 'AGREGUE UNA CANTIDA
-          D A COMPRAR',
-          text: 'Por favor!',
-        })
-      </script>";
         header('Location: ../../index.html');
         }else
           if (!is_numeric($cantidad)) {
-            echo "<script>
-Swal.fire({
-  icon: 'error',
-  title: 'Al parecer no es un numero',
-  text: 'agregue una cantidad valida!',
-  footer: '<a href>Why do I have this issue?</a>'
-})
-</script>";
             header('Location: ../../index.html');
     } else {
         $objOperacion->setCantidad($cantidad);
         $objOperacion->setOperador($opcion);
-        echo "<script>
-        Swal.fire(
-          'Good job!',
-          'Ordenado!',
-          'success'
-        )
-        </script>";
+      
     }
 }
 ?>
