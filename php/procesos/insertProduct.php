@@ -17,7 +17,7 @@
 
 <?php
       include("../BD/conexion.php");
-      $usuarios = "SELECT * FROM inventario";
+      $usuarios = "SELECT * FROM inventario ORDER BY idProducto DESC";
 ?>
 
 
