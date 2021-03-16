@@ -17,11 +17,6 @@
 <?php
 
 include_once "SetsGets.php";
-
-$postData = json_decode($_POST['postData']);
-echo $postData;
-
-
 $objOperacion = new bean();
 if (isset($_POST['cantidad'])) {
     if (empty($cantidad)) {
