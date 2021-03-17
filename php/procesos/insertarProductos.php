@@ -12,9 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ins->bindParam(":Precio", $Datos["Precio"], PDO::PARAM_INT);
     $ins->bindParam(":Total", $Datos["Total"], PDO::PARAM_INT);
     if($ins->execute()){
-        header('location: ControlCarrito.php');
+        header('location: MostarProducto.php');
     }else{
         header('location: index..php');
     }
-
 }

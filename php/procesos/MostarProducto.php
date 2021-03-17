@@ -68,9 +68,10 @@
           <span>Cantidad: <b><?php
           echo $row["CantidadComprada"];
           ?></b> </span>
-          <span class="space">Total a pagar:</span>
+          <span class="space">Total a pagar:<?php 
+         echo $row["Total"];
+        ?> </span>
       </div>
-      
     </div>
 
       <div class="containerright">
